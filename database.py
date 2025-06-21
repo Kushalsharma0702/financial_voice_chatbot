@@ -17,7 +17,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@host:port/database_name") # Fallback for env var not set
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:Kushal07@localhost/financial_chatbot_db") # Fallback for env var not set
 if not DATABASE_URL:
     raise ValueError("DATABASE_URL environment variable not set. Please configure it in .env")
 
