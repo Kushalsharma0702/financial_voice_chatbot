@@ -6,4 +6,4 @@ twilio==8.10.0
 boto3==1.34.128 # For AWS Bedrock
 pgvector==0.4.1 # For PostgreSQL vector extension
 gunicorn==22.0.0  # Add this line
-gevent==24.2.1 
+# gevent==24.2.1 
