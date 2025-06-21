@@ -1,3 +1,4 @@
+# app.py
 import os
 import json
 import uuid
@@ -5,6 +6,8 @@ import boto3
 import logging
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
+
+load_dotenv()
 
 from database import setup_database, Session, Customer, EMI, OTP, UnresolvedChat, ClientInteraction, RAGDocument
 from utils import generate_otp_code, send_sms_otp, verify_otp_code, extract_digits_from_speech, hide_number
